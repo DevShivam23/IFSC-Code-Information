@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFSC Code Info</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>IFSC Code Information</h1>
+      <label for="ifsc-code">Enter IFSC Code:</label>
+      <input type="text" id="ifsc-code" placeholder="Enter IFSC Code" />
+      <button id="fetch-btn">Fetch Info</button>
+
+      <div id="error-message"></div>
+
+      <table id="ifsc-info" class="hidden">
+        <thead>
+          <tr>
+            <th>Bank Name</th>
+            <th>Branch</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>IFSC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will go here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
